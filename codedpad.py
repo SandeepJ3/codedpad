@@ -53,5 +53,11 @@ def enter():
             conn.close()
     return render_template('codedpad.html',content=content,id=session.get('id') if session.get('id')!=None else " ")
 
+import os
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(
+        debug=True,
+        host='0.0.0.0',
+        port=int(os.environ.get('PORT', 5000))
+    )
