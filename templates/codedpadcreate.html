@@ -1,4 +1,53 @@
-<head><title>Codedpad</title></head>
+<head>
+  <title>Codedpad</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #0f0;
+      border-bottom: 1px solid #0f0;
+      padding-bottom: 10px;
+    }
+
+    input[type="text"], textarea {
+      background-color: #111;
+      color: #0f0;
+      border: 1px solid #0f0;
+      padding: 10px;
+      width: 90%;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #000;
+      color: #0f0;
+      border: 1px solid #0f0;
+      padding: 8px 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      margin-left:480px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0f0;
+      color: #000;
+    }
+
+    form {
+      max-width: 600px;
+    }
+
+    textarea {
+      height: 200px;
+      resize: none;
+    }
+  </style>
+</head>
 <body>
   <h1>Create your Codedpad</h1>
   <h2>Your code :</h2>{{id}}
