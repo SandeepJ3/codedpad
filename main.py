@@ -4,8 +4,11 @@ import sqlite3
 app = Flask(__name__)
 app.secret_key="12345"
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "codedpad.db")
+
 def get_db_connection():
-    conn = sqlite3.connect('codedpad.db')
+    conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
 
